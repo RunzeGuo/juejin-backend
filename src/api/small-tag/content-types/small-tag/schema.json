@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "small_tags",
+  "info": {
+    "singularName": "small-tag",
+    "pluralName": "small-tags",
+    "displayName": "SmallTag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "big_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::big-tag.big-tag",
+      "inversedBy": "small_tags"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "big_tags",
+  "info": {
+    "singularName": "big-tag",
+    "pluralName": "big-tags",
+    "displayName": "BigTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "small_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::small-tag.small-tag",
+      "mappedBy": "big_tags"
+    }
+  }
+}
