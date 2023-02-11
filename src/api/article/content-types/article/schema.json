@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Article"
+    "displayName": "Article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,14 +22,15 @@
       "type": "text"
     },
     "authorImg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "content": {
       "type": "richtext"
@@ -38,6 +40,12 @@
     },
     "view": {
       "type": "integer"
+    },
+    "small_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::small-tag.small-tag",
+      "inversedBy": "articles"
     }
   }
 }

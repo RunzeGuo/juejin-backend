@@ -19,6 +19,12 @@
       "relation": "manyToMany",
       "target": "api::big-tag.big-tag",
       "inversedBy": "small_tags"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "small_tags"
     }
   }
 }
