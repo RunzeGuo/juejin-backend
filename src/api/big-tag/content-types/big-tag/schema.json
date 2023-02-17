@@ -20,6 +20,9 @@
       "relation": "manyToMany",
       "target": "api::small-tag.small-tag",
       "mappedBy": "big_tags"
+    },
+    "href": {
+      "type": "string"
     }
   }
 }

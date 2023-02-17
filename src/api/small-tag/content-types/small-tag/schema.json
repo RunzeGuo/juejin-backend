@@ -4,7 +4,8 @@
   "info": {
     "singularName": "small-tag",
     "pluralName": "small-tags",
-    "displayName": "SmallTag"
+    "displayName": "SmallTag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,9 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "small_tags"
+    },
+    "href": {
+      "type": "string"
     }
   }
 }
